@@ -1,5 +1,7 @@
 # Azure-moku2-textbook
 
+本ハンズオンではAzureの利用が前提となりますのでAzureの登録をしてください。
+
 Azure無料枠の作成方法について記載します。
 Azure無料枠は2種類あり従来のAzureサブスクリプションの1か月無料枠とテスト目的で12か月間3000円/月で利用できるVisualStudioDevEssentialsがあります。
 どちらを利用するかは任意に選択してください。おすすめはVisualStudioDevEssentialsです。
@@ -16,6 +18,7 @@ Azure無料枠は2種類あり従来のAzureサブスクリプションの1か�
 [Azureサブスクリプション無料枠登録リンク](https://azure.microsoft.com/ja-jp/free/)
 
 登録方法についてはこちらを参考にしてください。
+
 [Azureサブスクリプション登録方法](https://tech-blog.cloud-config.jp/2015/03/27/establishment-of-the-sub-chestnut-microsoftazuresubscription/)
 
 
@@ -24,5 +27,7 @@ Azure無料枠は2種類あり従来のAzureサブスクリプションの1か�
 * 利用できるサービスやデータセンターの数が少なめです。
 
 [VisualStudioDevEssentials登録リンク](https://azure.microsoft.com/ja-jp/pricing/member-offers/vs-dev-essentials/)
+
+登録方法についてはこちらを参考にしてください。
 
 [DevEssentialsの登録方法](https://www.slideshare.net/ayatokura/visual-studio-dev-essential201611)
