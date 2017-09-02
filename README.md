@@ -1,4 +1,4 @@
-# Azure-moku2-textbook
+# Azure無料枠の利用について
 
 本ハンズオンではAzureの利用が前提となりますのでAzureの登録をしてください。
 
