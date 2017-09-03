@@ -38,10 +38,27 @@ Azureのアカウント登録とサブスクリプションの作成が完了し
 [Bot Framework Emulatorのセットアップ方法について](http://qiita.com/kingkinoko/items/eb83f8ca00c516eac29e)
 
 ## Bot Service及びVisionAPIの作成
-
+Computer Vision APIのインスタンスを作成します。
 
 
 ![参考画像01](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/001.png)
+
+
+Azureのポータル画面を開いたら[+]ボタンを選択し「AI+Cognitive Service」から「Computer Vision API」を選択します。
+
+基本的な情報を入力していきます。
+
+「Name」
+
+任意の名称を入力してください。サンプル画像の名称は利用しないでください。名称重複エラーが発生する可能性があります。
+
+「価格レベル」
+
+F0を選択してください。F0以外を選択すると課金が発生するので注意してください。
+
+「REsource Group」
+
+リソースグループの新規作成をする場合は任意の名称を入力してください。既存のリソースグループを利用する場合は任意のリソースグループを選択してください。
 
 ![参考画像02](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/002.png)
 
