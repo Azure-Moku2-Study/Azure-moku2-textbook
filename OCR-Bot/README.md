@@ -1,6 +1,8 @@
 # AzureBotServiceを利用したOCR-Botの作成について
 ### ハンズオンの目的
-Bot Framework Emulatorを利用して画像から文字を取得して返信するBotを作成します。
+Bot Serviceに送信した画像から文字を取得して返信するBot作成します。
+
+今回利用するサービスはBot ServiceとComputer Vision APIです。
 
 ### ハンズオンのゴール
 Azureの環境構築、Bot Framework Emulatorのインストール、Vision APIを利用してOCR-Botの実行ができることをゴールとします。
@@ -16,7 +18,8 @@ Azureのアカウント登録とサブスクリプションの作成が完了し
 将来的にサービスの更新や機能の仕様変更に伴いハンズオンの内容に誤差が発生する可能性がありますので予めご承知おきください。
 
 ## 事前準備（インストール編）
-Bot Framework Emulator
+
+下記の環境が必要になりますのでインストールをお願いします。
 
 ・Bot Framework Emulatorの使い方についての公式ドキュメント（英語）
 
@@ -35,3 +38,5 @@ Bot Framework Emulator
 [Bot Framework Emulatorのセットアップ方法について](http://qiita.com/kingkinoko/items/eb83f8ca00c516eac29e)
 
 ## Bot Service及びVisionAPIの作成
+
+
