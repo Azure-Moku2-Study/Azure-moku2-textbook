@@ -88,9 +88,7 @@ static async Task<HttpResponseMessage> GetOCRData(Stream stream)
         OCRRequest.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
 
         // リクエストヘッダーの作成
-        // getOCRDataClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "ここにComupter Vision APIのKeyを記載");
-        getOCRDataClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "38f09d193aa74e0f85aabf41e427adb1");
-
+        getOCRDataClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "ここにComupter Vision APIのKeyを記載");
 
         // ComputerVisionAPIにリクエスト
         OCRResponse = await getOCRDataClient.SendAsync(OCRRequest);
