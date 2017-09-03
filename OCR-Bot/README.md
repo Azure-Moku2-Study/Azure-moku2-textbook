@@ -37,12 +37,10 @@ Azureのアカウント登録とサブスクリプションの作成が完了し
 
 [Bot Framework Emulatorのセットアップ方法について](http://qiita.com/kingkinoko/items/eb83f8ca00c516eac29e)
 
-## Bot Service及びVisionAPIの作成
+## Computer Vision APIの作成
 Computer Vision APIのインスタンスを作成します。
 
-
 ![参考画像01](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/001.png)
-
 
 Azureのポータル画面を開いたら[+]ボタンを選択し「AI+Cognitive Service」から「Computer Vision API」を選択します。
 
@@ -58,9 +56,11 @@ F0を選択してください。F0以外を選択すると課金が発生する�
 
 **「REsource Group」**
 
-リソースグループの新規作成をする場合は任意の名称を入力してください。既存のリソースグループを利用する場合は任意のリソースグループを選択してください。ライセンスに同意するチェックボックスにチェックをいれて作成すると少し待った後に作成されます。
+リソースグループの新規作成をする場合は任意の名称を入力してください。既存のリソースグループを利用する場合は任意のリソースグループを選択してください。
 
-続いて作成されたらAPI Keyを取得します。
+ライセンスに同意するチェックボックスにチェックをいれて作成すると少し待った後に作成されます。
+
+続いてインスタンスが作成されたらAPI Keyを取得します。
 
 ![参考画像03](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/003.png)
 
@@ -72,14 +72,28 @@ Keysを選択してKEY 1の値を控えておいてください。
 
 ※画像に記載のあるKEYは削除済みなので利用できません。
 
+これでComputer Vision APIの作成は完了です。
 
+
+## Bot Serviceの作成
+
+続いてBot Serviceを作成します。
 
 ![参考画像02](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/002.png)
 
+Azureのポータル画面を開いたら[+]ボタンを選択し「Data + Analytics」から「Bot Service」を選択します。
 
+基本的な情報を入力していきます。
 
+**「アプリ名」**
 
+任意の名称を入力してください。サンプル画像の名称は利用しないでください。名称重複エラーが発生する可能性があります。
 
+**「REsource Group」**
+
+リソースグループの新規作成をする場合は任意の名称を入力してください。既存のリソースグループを利用する場合は任意のリソースグループを選択してください。
+
+作成ボタンを選択すると少し待った後に作成されます。Bot Serviceの作成は少し時間がかかるので座して待ちましょう。
 
 
 ![参考画像05](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/005.png)
