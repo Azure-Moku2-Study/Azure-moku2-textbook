@@ -48,23 +48,39 @@ Azureのポータル画面を開いたら[+]ボタンを選択し「AI+Cognitive
 
 基本的な情報を入力していきます。
 
-*「Name」*
+**「Name」**
 
 任意の名称を入力してください。サンプル画像の名称は利用しないでください。名称重複エラーが発生する可能性があります。
 
-*「価格レベル」*
+**「価格レベル」**
 
 F0を選択してください。F0以外を選択すると課金が発生するので注意してください。
 
-*「REsource Group」*
+**「REsource Group」**
 
-リソースグループの新規作成をする場合は任意の名称を入力してください。既存のリソースグループを利用する場合は任意のリソースグループを選択してください。
+リソースグループの新規作成をする場合は任意の名称を入力してください。既存のリソースグループを利用する場合は任意のリソースグループを選択してください。ライセンスに同意するチェックボックスにチェックをいれて作成すると少し待った後に作成されます。
 
-![参考画像02](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/002.png)
+続いて作成されたらAPI Keyを取得します。
 
 ![参考画像03](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/003.png)
 
+リソースグループ一覧を選択して、作成したリソースグループ内にある「Computer Vision API」のインすんタンスを選択します。
+
 ![参考画像04](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/004.png)
+
+Keysを選択してKEY 1の値を控えておいてください。
+
+※画像に記載のあるKEYは削除済みなので利用できません。
+
+
+
+![参考画像02](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/002.png)
+
+
+
+
+
+
 
 ![参考画像05](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/005.png)
 
