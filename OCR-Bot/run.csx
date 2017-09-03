@@ -55,7 +55,7 @@ public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
                 }
                 catch (Exception e)
                 {
-                    responseMsg = "添付ファイルを分析できませんでした分析できませんでした。";
+                    responseMsg = "添付ファイルを分析できませんでした。";
                 }
         
                 // メッセージを返答
