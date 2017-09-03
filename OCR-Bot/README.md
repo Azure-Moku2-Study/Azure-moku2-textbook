@@ -89,30 +89,78 @@ Azureのポータル画面を開いたら[+]ボタンを選択し「Data + Analy
 
 任意の名称を入力してください。サンプル画像の名称は利用しないでください。名称重複エラーが発生する可能性があります。
 
-**「REsource Group」**
+**「Resource Group」**
 
 リソースグループの新規作成をする場合は任意の名称を入力してください。既存のリソースグループを利用する場合は任意のリソースグループを選択してください。
 
-作成ボタンを選択すると少し待った後に作成されます。Bot Serviceの作成は少し時間がかかるので座して待ちましょう。
+作成ボタンを選択すると少し待った後に作成されます。
 
 
 ![参考画像05](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/005.png)
 
+Bot Serviceインスタンスが作成されたら選択し設定を行っていきます。
+
+リソースマネージャーからBot Serviceを選択して下さい。
+
 ![参考画像06](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/006.png)
+
+Bot Serviceの初期設定画面が開くので「Create Microsoft App ID Password」を選択します。
 
 ![参考画像07](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/007.png)
 
+アプリIDとパスワードを生成画面が開くので「アプリパスワードを生成して続行」を選択します。
+
 ![参考画像08](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/008.png)
+
+新しいパスワードが生成されますのでこちらのパスワードを控えておきます。
 
 ![参考画像09](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/009.png)
 
+ここでアプリIDも控えておいてください。パスワードとアプリIDはBot Emulatorで利用します。
+「終了してボットのフレームワークに戻る」を選択します。
+
 ![参考画像10](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/010.png)
+
+続いてプログラム言語の選択やテンプレートの選択を実施していきます。
+
+**「Choose a language」**
+
+ここではC#を選択します。
+
+**「Choose a template」**
+
+ここではBasicを選択します。Basicは単純なエコーボットです。
+
+**「Select your country/region」**
+
+ここではJapanを選択します。
+
+チェックボックス2か所をチェックして「Create bot」を選択します。こちらの作成には時間がかかるので座して待ちましょう。
+
 
 ![参考画像11](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/011.png)
 
+Bot Serviceが作成されると上記のような画面が表示されます。
+
+Bot Serviceのエンドポイントを取得するために「SETTINGS」を選択します。
+
 ![参考画像12](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/012.png)
+
+SETTINGS画面がひらいたらConfigurationのMessaging endpointのURLを控えておきましょう。
 
 ![参考画像13](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/013.png)
 
+Bot Serviceが作成されたら接続確認を行うためインストールしておいたBot Emulatorで確認を行います。
+
+一番上の青い部分に控えておいたURLを入力します。
+
+その後、控えておいたAppIDとPasswordを入力し「CONNECT」を選択し接続します。
+
+接続に失敗するときはエンドポイントURL、AppID、Passwordを確認してください。
+
+
 ![参考画像14](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/014.png)
 
+任意の文字を入力して送信してみましょう。
+
+入力した文字がオウム返しされれば成功です。
