@@ -170,5 +170,7 @@ Bot Serviceが作成されたら接続確認を行うためインストールし
 ## OCR-botの作成
 OCR-botの作成は今回Azure上で完結させます。従来であればVisualStudio等のIDEを利用して作成しますが、ここでは動かすことを目的にしていきたいと思います。
 
+![参考画像15](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/015.png)
+![参考画像16](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/016.png)
 
 
