@@ -163,19 +163,39 @@ Bot Serviceが作成されたら接続確認を行うためインストールし
 
 任意の文字を入力して送信してみましょう。
 
-入力した文字がオウム返しされれば成功です。
+入力した文字がオウム返しされれば成功です。もしここでエラーになる場合はngrockの設定がされていない可能性がありますので[Bot Framework Emulatorのセットアップ方法について](http://qiita.com/kingkinoko/items/eb83f8ca00c516eac29e)を参考に再度設定を試してください。
 
 これで環境構築は完了です。
 
 ## OCR-botの作成
 OCR-botの作成は今回Azure上で完結させます。従来であればVisualStudio等のIDEを利用して作成しますが、ここでは動かすことを目的にしていきたいと思います。
 
-[サンプルソース](https://raw.githubusercontent.com/Azure-Moku2-Study/Azure-moku2-textbook/master/OCR-Bot/run.csx)
 ![参考画像15](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/015.png)
+
+Bot Serviceのソース画面に移動してrun.csxを選択します。
+
+ここのソースを下記のリンクにあるサンプルソースに置き換えます。下記のリンクを開いてソースを全選択でコピペしてください。
+
+[サンプルソース](https://raw.githubusercontent.com/Azure-Moku2-Study/Azure-moku2-textbook/master/OCR-Bot/run.csx)
+
+次にEdit画面のソースを全選択して貼り付けます。全部上書きで貼り付けてください。
+
+その後、右上にあるSaveボタンを選択します。
+
 ![参考画像16](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/016.png)
+
+Saveボタンを選択するとコンパイルが実行されるのでログを確認します。
+
+ログに「Compilation Succeeded」と表示されれば成功です。ここで「Failed」となる場合は正常に張り付けられていない可能性があるので再度ソースのコピペを試し下さい。
+
 ![参考画像17](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/blob/master/OCR-Bot/image/017.png)
 
-サンプル画像を取得して試してみましょう。
+ソースの変更が正常に完了したら、サンプル画像を取得して試してみましょう。
+
 [サンプル画像](https://github.com/Azure-Moku2-Study/Azure-moku2-textbook/tree/master/OCR-Bot/sample-images)
 
+サンプル画像を取得してBot Emulatorから画像をとうこうします。
+
 上記の図のように画像から文字を取得して返信されれば成功です。
+
+ネット上にあるサンプルの名刺画像やドキュメント画像を拾って試してみてください。
