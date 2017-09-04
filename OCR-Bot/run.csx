@@ -55,11 +55,11 @@ public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
                 {
                     responseMsg = "添付ファイルを分析できませんでした。";
                 }
-        
-                // メッセージを返答
-                Activity reply = activity.CreateReply(responseMsg);
-                await connector.Conversations.ReplyToActivityAsync(reply);
             }
+            
+            // メッセージを返答
+            Activity reply = activity.CreateReply(responseMsg);
+            await connector.Conversations.ReplyToActivityAsync(reply);
         }
         
         return req.CreateResponse(HttpStatusCode.Accepted);
@@ -77,7 +77,7 @@ static async Task<HttpResponseMessage> GetOCRData(Stream stream)
     // Computer vision APIのOCRにリクエスト
     using (var getOCRDataClient = new HttpClient())
     {
-        // リクエストパラメータ作成、検知タイプは英文
+        // リクエストパラメータ作成、検知タイプは自動、向きの検知も自動
         string language = "unk";
         string detectOrientation = "true";
         var uri = $"https://westus.api.cognitive.microsoft.com/vision/v1.0/ocr?language={language}&detectOrientation={detectOrientation}";
@@ -88,7 +88,8 @@ static async Task<HttpResponseMessage> GetOCRData(Stream stream)
         OCRRequest.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
 
         // リクエストヘッダーの作成
-        getOCRDataClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "ここにComupter Vision APIのKeyを記載");
+        // getOCRDataClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "ここにComupter Vision APIのKeyを記載");
+        getOCRDataClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "38f09d193aa74e0f85aabf41e427adb1");
 
         // ComputerVisionAPIにリクエスト
         OCRResponse = await getOCRDataClient.SendAsync(OCRRequest);
@@ -103,7 +104,6 @@ static async Task<HttpResponseMessage> GetOCRData(Stream stream)
 /// <returns>Stream</returns>
 static async Task<string> GetParseString(HttpResponseMessage OCRResponse, TraceWriter log)
 {
-    // ComputerVisionAPIのレスポンスをパースして文章に
     var jsonContent = await OCRResponse.Content.ReadAsStringAsync();
     log.Info(jsonContent);
     OCR_Response ocr_data = JsonConvert.DeserializeObject<OCR_Response>(jsonContent);
