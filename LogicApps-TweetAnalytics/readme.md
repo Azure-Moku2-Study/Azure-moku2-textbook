@@ -1,5 +1,5 @@
 # Logic Apps で Twitter からキーワードを取得してみる。
-任意のキーワードについて Twitter 上で呟かれている内容が、肯定あるいは否定的なものなのかを分析する機能を作成するハンズオンです。  
+任意のキーワードについて、Twitter 上でどのようなキーワードが関連しているかを Power BI 上で可視化するハンズオンです。  
 このハンズオンでは、以下の内容を実施します。
 
 ## このハンズオンで準備するもの
@@ -29,12 +29,10 @@
 ### 利用するサービス
 - Azure Text Analytics API (Key Phrase)
 
-## Step 3 : ツイートの評判分析を行う。
+## Step 3 : 抽出したキーワードを可視化する。
 
 ### 実装する機能
-- Twitter から取得したツイートを翻訳する。
-- ツイートの評判分析を行う。
+- 抽出されたキーワードを Power BI で可視化する。
 
 ### 利用するサービス
-- Azure Translator Text API
-- Azure Text Analytics API (Sentiment)
+- Power BI
