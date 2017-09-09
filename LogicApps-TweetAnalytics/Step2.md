@@ -5,7 +5,7 @@
 1. Step 1 で作成したストレージアカウントを開きます。
 2. 概要ページで「Tables」をクリックします。
 
-image
+![Create Table 1](./assets/Step2/01.png)
 
 3. 「Table service」画面で「+ Table」をクリックし、以下の内容を入力します。
     **Table name**  
@@ -13,22 +13,22 @@ image
 
 4. 「OK」ボタンをクリックします。
 
-image
+![Create Table 2](./assets/Step2/02.png)
 
 5. Storage account の画面に戻り、「Access keys」の「key1 : CONNECTION STRING」をコピーします。  
-    コピーした文字列は、口述の Function App および Logic Apps で使用します。
+    コピーした文字列は、口述の Function App で使用します。
 
-image
+![Create Table 3](./assets/Step2/03.png)
 
 ## Text Analytics を作成する
 1. Azure ポータル画面で「+」をクリックします。
 2. 検索ボックスで「Text」と入力し、検索候補として表示される「Text Analytics API」をクリックします。
 
-image
+![Create Text Analytics 1](./assets/Step2/04.png)
 
 3. 「Text Analytics API (preview)」の画面で「作成」ボタンをクリックします。
 
-image
+![Create Text Analytics 2](./assets/Step2/05.png)
 
 4. 「Create」画面で以下の内容を入力します。  
 
@@ -52,23 +52,23 @@ image
 
 5. 「作成」ボタンをクリックします。
 
-image
+![Create Text Analytics 3](./assets/Step2/06.png)
 
 6. 作成した Text Analytics を開きます。
 7. 「Key」画面で「KEY 1」をコピーします。  
     このデータは口述の Logic Apps から連携する際に使用します。
 
-image
+![Create Text Analytics 4](./assets/Step2/07.png)
 
 ## Function App を作成する
 1. Azure ポータル画面で「+」をクリックします。
 2. 検索ボックスで「Function」と入力し、検索候補として表示される「Function App」をクリックします。
 
-image
+![Create Function App 1](./assets/Step2/08.png)
 
 3. 「Function App」の画面で「作成」ボタンをクリックします。
 
-image
+![Create Function App 2](./assets/Step2/09.png)
 
 4. 「Function App」の作成画面で、以下の内容を入力します。
 
@@ -95,11 +95,11 @@ image
     
 5. 「作成」ボタンをクリックします。
 
-image
+![Create Function App 3](./assets/Step2/10.png)
 
 6.  作成した Function App にアクセスし、関数セクションの「+」をクリックします。
 
-image
+![Create Function App 4](./assets/Step2/11.png)
 
 7. 関数の作成画面で以下の内容を選択します。  
 
@@ -111,7 +111,7 @@ image
 
 8. 「この関数を作成する」ボタンをクリックします。
 
-image
+![Create Function App 5](./assets/Step2/12.png)
 
 9. 「index.js」ファイルの中身を、以下の内容に置き換えます。
 ```
@@ -141,7 +141,7 @@ function GenerateGuid() {
 
 10. 「保存」ボタンをクリックします。
 
-image
+![Create Function App 6](./assets/Step2/13.png)
 
 11. 「ファイルの表示」をクリックします。
 12. 「function.json」をクリックします。
@@ -151,14 +151,34 @@ image
       "type": "table",
       "name": "tableBinding",
       "tableName": "TwitterKeyWords",
-      "connection": "AzureWebJobsStorageConnectionString",
+      "connection": "StorageConnectionString",
       "direction": "out"
     }
 ```
 
 14. 「保存」ボタンをクリックします。
 
-image
+![Create Function App 7](./assets/Step2/14.png)
+
+15. Functions のホームメニューをクリックします。
+16. 「プラットフォーム機能」をクリックします。
+17. 「Application settings」をクリックします。
+
+![Create Function App 8](./assets/Step2/15.png)
+
+18. 「アプリケーションの設定」に以下の内容を入力します。
+
+    **名前**  
+    「StorageConnectionString」と入力します。
+
+    **値**  
+    Storage account のキーを入力します。
+
+![Create Function App 9](./assets/Step2/16.png)
+
+19. 「Save」ボタンをクリックします。
+
+![Create Function App 10](./assets/Step2/17.png)
 
 ## Logic Apps を拡張する
 1. Step 1 で作成した Logic App を開きます。
