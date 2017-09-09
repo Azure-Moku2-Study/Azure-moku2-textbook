@@ -233,7 +233,10 @@ function GenerateGuid() {
 
 ![Update Logic Apps 10](./assets/Step2/27.png)
 
-8. 「要求本文」に「Key Phrases」を挿入します。
+8. 「要求本文」に以下の内容を入力します。  
+    ```
+    {"phrases": [Key Phrases]}
+    ```
 
 ![Update Logic Apps 11](./assets/Step2/28.png)
 
