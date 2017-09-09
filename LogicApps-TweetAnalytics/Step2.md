@@ -184,20 +184,20 @@ function GenerateGuid() {
 1. Step 1 で作成した Logic App を開きます。
 2. 「概要」ページで「編集」ボタンをクリックします。
 
-image
+![Update Logic Apps 1](./assets/Step2/18.png)
 
 3. 下図のように、Twitter のトリガーアクションと「BLOB の作成」アクションの間をクリックし、「+」をクリックします。
 4. 「アクションの追加」をクリックします。
 
-image
+![Update Logic Apps 2](./assets/Step2/19.png)
 
 5. アクションの一覧から「Text Analytics」をクリックします。
 
-image
+![Update Logic Apps 3](./assets/Step2/20.png)
 
 6. 「Text Analytics」のアクション一覧から「Key Phrases プレビュー」をクリックします。
 
-image
+![Update Logic Apps 4](./assets/Step2/21.png)
 
 7. 「Key Phrase」アクションに以下の内容を入力します。
     **接続名**  
@@ -208,41 +208,43 @@ image
 
 8. 「作成」ボタンをクリックします。
 
-image
+![Update Logic Apps 5](./assets/Step2/22.png)
 
 9. 「Key Phrase」アクションに以下の内容を入力します。
     **Text**  
     「ツイートテキスト」を選択します。
 
+![Update Logic Apps 6](./assets/Step2/23.png)
+
 10. 「+」をクリックします。
 11. 「アクションの追加」をクリックします。
 
-image
+![Update Logic Apps 7](./assets/Step2/24.png)
 
 5. アクションの一覧から「Azure Functions」をクリックします。
 
-image
+![Update Logic Apps 8](./assets/Step2/25.png)
 
 6. 「Azure Functions」のアクション一覧から「Azure 関数を選択する」をクリックします。
 
-image
+![Update Logic Apps 9](./assets/Step2/26.png)
 
 7. 前述で作成した Function App を選択します。
 
-image
+![Update Logic Apps 10](./assets/Step2/27.png)
 
 8. 「要求本文」に「Key Phrases」を挿入します。
 
-image
+![Update Logic Apps 11](./assets/Step2/28.png)
 
 9. 「BLOB の作成」アクション右側の「…」をクリックします。
 10. 「削除」をクリックします。
 
-image
+![Update Logic Apps 12](./assets/Step2/29.png)
 
 11. 「Logic Apps デザイナー」画面の「保存」ボタンをクリックします。
 
-image
+![Update Logic Apps 13](./assets/Step2/30.png)
 
 12. Logic Apps の概要ページに戻り、「トリガーの実行」をクリックします。  
     トリガーが「無効」になっている場合は、先に「有効」をクリックしてください。
