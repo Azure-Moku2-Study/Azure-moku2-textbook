@@ -12,7 +12,7 @@
 
 ### 実装する機能
 - Logics Apps で Twitter からツイートを取得する。
-- 取得したツイートを OneDrive??? に保存する。
+- 取得したツイートを Blob に保存する。
 
 ### 利用するサービス
 - Azure Logic Apps
