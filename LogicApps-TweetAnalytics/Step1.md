@@ -42,7 +42,7 @@ Twitter から任意の文字列を検索し、その内容を Azure Blob Storag
 3. 「Create storage account」画面で以下の内容を入力します。
 
     **Name**  
-    「azuremoku2storage」と入力します。
+    任意の入力します。
 
     **Deployment model**  
     「Resource manager」を選択します。
