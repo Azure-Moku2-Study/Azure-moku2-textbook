@@ -32,7 +32,7 @@
 - Azure Table Storage
 - Azure Function App
 
-## Step 3 : 抽出したキーワードを可視化する。(./Step3.md)
+## [Step 3 : 抽出したキーワードを可視化する。](./Step3.md)
 
 ### 実装する機能
 - 抽出されたキーワードを Power BI で可視化する。
