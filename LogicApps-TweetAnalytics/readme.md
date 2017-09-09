@@ -6,12 +6,12 @@
 - Microsoft Azure サブスクリプション
 - Twitter アカウント
     > Logic Apps から Twitter へ接続するために、アカウントが必要です。
-- Office 365 アカウント (Step 2 以降を実施する場合のみ)
+- Office 365 アカウント (Step 3 以降を実施する場合のみ)
 
 ## [Step 1 : ツイートを取得して、内容を保存する。](./Step1.md)
 
 ### 実装する機能
-- Logics Apps で Twitter からツイートを取得する。
+- Azure Logic Apps で Twitter からツイートを取得する。
 - 取得したツイートを Blob に保存する。
 
 ### 利用するサービス
@@ -27,6 +27,7 @@
 ### 利用するサービス
 - Azure Text Analytics API (Key Phrase)
 - Azure Table Storage
+- Azure Function App
 
 ## Step 3 : 抽出したキーワードを可視化する。(./Step3.md)
 
